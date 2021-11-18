@@ -2,19 +2,18 @@
 
   <PropertyGroup>
     <Authors>Andreas Håkansson, Steven Robbins and contributors</Authors>
-    <CodeAnalysisRuleSet>..\..\dependencies\Nancy\Nancy.ruleset</CodeAnalysisRuleSet>
     <Description>Provides JSON (de)serialization support using Newtonsoft.JsonNet.</Description>
     <DisableImplicitFrameworkReferences Condition=" '$(TargetFramework)' == 'net452' ">true</DisableImplicitFrameworkReferences>
     <PackageIconUrl>http://nancyfx.org/nancy-nuget.png</PackageIconUrl>
     <PackageLicenseUrl>https://github.com/NancyFx/Nancy/blob/master/license.txt</PackageLicenseUrl>
     <PackageProjectUrl>http://nancyfx.org</PackageProjectUrl>
     <PackageTags>Nancy;Json;JsonNet</PackageTags>
-    <TargetFrameworks>netstandard1.6;net452</TargetFrameworks>
-    <Version>2.0.0-clinteastwood</Version>
+    <TargetFrameworks>netstandard2.0;net452</TargetFrameworks>
+    <Version>2.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../../dependencies/Nancy/src/Nancy/Nancy.csproj" />
+    <PackageReference Include="Nancy" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup>
